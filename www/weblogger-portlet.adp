@@ -11,7 +11,7 @@
                 <p>
                   <b><a href="@entries.view_url@" title="View this entry">@entries.title@</a></b> <br />
                   @entries.content;noquote@
-                  <br><b>by @entries.poster_first_names@ @entries.poster_last_name@</b>
+                  <br><b>#weblogger-portlet.lt_by_entriesposter_firs#</b>
                   <small>(@entries.posted_time_pretty@)</small>
                 </p>
               </li>
@@ -20,13 +20,13 @@
         </ul>
         <if @entries.add_url@ not nil>
           <p>
-            <b>&raquo;</b> <a href="@entries.add_url@">Add entry</a>
+            <b>#weblogger-portlet.raquo#</b> <a href="@entries.add_url@">#weblogger-portlet.Add_entry#</a>
           </p>
         </if>
       </multiple>
     </if>
     <else>
-      <small>No Entries</small>
+      <small>#weblogger-portlet.No_Entries#</small>
     </else>
   </if>
   <else>
