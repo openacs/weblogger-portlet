@@ -19,7 +19,7 @@
 		    from   apm_packages p left outer join 
                            pinds_blog_entries e on (e.package_id = p.package_id) join 
 		           acs_objects o on (o.object_id = e.entry_id) join 
-		           all_users u on (u.user_id = o.creation_user)
+		           acs_users_all u on (u.user_id = o.creation_user)
 		    where  p.package_id in ([join $list_of_package_ids ", "])
 		    and    e.entry_date > current_timestamp - interval '30 days'
 		    and    e.draft_p = 'f'
