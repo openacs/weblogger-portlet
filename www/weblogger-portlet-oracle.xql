@@ -19,7 +19,7 @@
 		    from   apm_packages p,
                            pinds_blog_entries e,
 		           acs_objects o,
-		           all_users u
+		           acs_users_all u
 		    where  p.package_id in ([join $list_of_package_ids ", "])
                     and    e.package_id (+) = p.package_id
                     and    o.object_id (+) = e.entry_id
