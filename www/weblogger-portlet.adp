@@ -10,7 +10,7 @@
               <li>
                 <p>
                   <b><a href="@entries.view_url@" title="View this entry">@entries.title@</a></b> <br />
-                  @entries.content@
+                  @entries.content;noquote@
                   <br><b>by @entries.poster_first_names@ @entries.poster_last_name@</b>
                   <small>(@entries.posted_time_pretty@)</small>
                 </p>
