@@ -17,46 +17,46 @@ ad_proc -private weblogger_portlet::after_install {} {
 } {
     
     db_transaction {
-	set ds_id [portal::datasource_new \
+	set ds_id [portal::datasource::new \
                    -name "weblogger_portlet" \
                    -description "Weblogger Portlet"]
 
-	portal::datasource_set_def_param \
+	portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key shadeable_p \
             -value t
 
-	portal::datasource_set_def_param \
+	portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key hideable_p \
             -value t
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key user_editable_p \
             -value f
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key shaded_p \
             -value f
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key link_hideable_p \
             -value f
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p f \
@@ -123,46 +123,46 @@ ad_proc -private weblogger_admin_portlet::after_install {} {
 } {
     
     db_transaction {
-	set ds_id [portal::datasource_new \
+	set ds_id [portal::datasource::new \
                    -name "weblogger_admin_portlet" \
                    -description "Weblogger Admin Portlet"]
 
-	portal::datasource_set_def_param \
+	portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key shadeable_p \
             -value f
 
-	portal::datasource_set_def_param \
+	portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key hideable_p \
             -value f
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key user_editable_p \
             -value f
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key shaded_p \
             -value f
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p t \
             -key link_hideable_p \
             -value t
 
-        portal::datasource_set_def_param \
+        portal::datasource::set_def_param \
             -datasource_id $ds_id \
             -config_required_p t \
             -configured_p f \
