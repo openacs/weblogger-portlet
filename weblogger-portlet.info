@@ -10,6 +10,8 @@
 
     <version name="0.1d" url="http://openacs.org/repository/download/apm/weblogger-portlet-0.1d.apm">
         <owner url="mailto:simon@bcuni.net">Simon Carstensen</owner>
+        <release-date>2003-11-10</release-date>
+        <vendor url="http://www.collaboraid.biz">Collaboraid</vendor>
 
         <provides url="weblogger-portlet" version="0.1d"/>
         <requires url="lars-blogger" version="0.9"/>
