@@ -14,7 +14,7 @@
 		           e.content,
                            u.first_names as poster_first_names,
 		           u.last_name as poster_last_name,
-			   to_char(e.posted_date , 'HH24:MI') as posted_time_pretty,
+			   to_char(e.entry_date , 'HH24:MI') as posted_time_pretty,
                            p.package_id
 		    from   apm_packages p left outer join 
                            pinds_blog_entries e on (e.package_id = p.package_id) join 
@@ -24,7 +24,7 @@
 		    and    e.entry_date > current_timestamp - interval '30 days'
 		    and    e.draft_p = 'f'
 		    and    e.deleted_p = 'f'
-		    order  by p.package_id asc, e.entry_date desc, e.posted_date desc
+		    order  by p.package_id asc, e.entry_date desc, e.entry_date desc
         </querytext>
     </fullquery>
 
