@@ -39,7 +39,7 @@ db_multirow -extend { view_url add_url } entries entries {} {
     if { !$package_read_p($package_id) } {
         continue
     }
-    set content [string_truncate -len 100 $content]
+    set content [string_truncate -len 100 -- $content]
     set view_url "${base_url}one-entry?[export_vars { entry_id }]"
     if { $package_create_p($package_id) } {
         set add_url "${base_url}entry-edit"
