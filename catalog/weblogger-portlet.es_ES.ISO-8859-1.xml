@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="weblogger-portlet" package_version="0.1d2" locale="es_ES" charset="ISO-8859-1">
+
+  <msg key="Add_entry">Agregar entrada</msg>
+  <msg key="Administer_Weblogger">Administrar Weblogger</msg>
+  <msg key="Administration">Administración de Weblogger</msg>
+  <msg key="Draft_entries">Borrador de Entradas</msg>
+  <msg key="lt_by_entriesposter_firs">por %entries.poster_first_names% %entries.poster_last_name%</msg>
+  <msg key="No_Entries">Ninguna Entrada</msg>
+  <msg key="raquo">&amp;raquo;</msg>
+</message_catalog>
