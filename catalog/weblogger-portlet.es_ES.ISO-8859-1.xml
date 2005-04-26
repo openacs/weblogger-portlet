@@ -8,4 +8,5 @@
   <msg key="lt_by_entriesposter_firs">por %entries.poster_first_names% %entries.poster_last_name%</msg>
   <msg key="No_Entries">Ninguna Entrada</msg>
   <msg key="raquo">&amp;raquo;</msg>
+  <msg key="weblogger">Weblogger</msg>
 </message_catalog>
