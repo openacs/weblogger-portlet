@@ -23,6 +23,8 @@
             <b>#weblogger-portlet.raquo#</b> <a href="@entries.add_url@">#weblogger-portlet.Add_entry#</a>
           </p>
         </if>
+        <p>
+          <b>#weblogger-portlet.raquo#</b> <a href="@entries.base_url@">#weblogger-portlet.FullView#</a>
       </multiple>
     </if>
     <else>
