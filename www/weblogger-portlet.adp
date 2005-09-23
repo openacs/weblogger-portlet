@@ -25,6 +25,7 @@
         </if>
         <p>
           <b>#weblogger-portlet.raquo#</b> <a href="@entries.base_url@">#weblogger-portlet.FullView#</a>
+        </p>
       </multiple>
     </if>
     <else>
