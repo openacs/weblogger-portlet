@@ -21,7 +21,7 @@
 		           acs_objects o on (o.object_id = e.entry_id) join 
 		           acs_users_all u on (u.user_id = o.creation_user)
 		    where  p.package_id in ([join $list_of_package_ids ", "])
-		    and    e.entry_date > current_timestamp - interval '30 days'
+		    and    e.entry_date > current_timestamp - interval '$num_days_shown days'
 		    and    e.draft_p = 'f'
 		    and    e.deleted_p = 'f'
 		    order  by p.package_id asc, e.entry_date desc, e.entry_date desc

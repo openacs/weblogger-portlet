@@ -35,6 +35,10 @@ foreach package_id $config(package_id) {
     }
 }
 
+# Retrieve the days shown in the portlet from the parameter of the associated package
+# As we do not have user parameters, choose the first package when outside a community.
+set num_days_shown [parameter::get -package_id [lindex $list_of_package_ids 0] -parameter "NumDaysOnFrontPage" -default "30"]
+
 db_multirow -extend { view_url add_url } entries entries {} {
     if { !$package_read_p($package_id) } {
         continue
