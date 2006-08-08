@@ -25,7 +25,7 @@ ad_proc -private weblogger_portlet::my_package_key {
 
 ad_proc -public weblogger_portlet::get_pretty_name {
 } {
-    return "Weblogger"
+    return "#weblogger-portlet.weblogger#"
 }
 
 

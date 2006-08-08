@@ -15,7 +15,7 @@ ad_proc -private weblogger_admin_portlet::get_my_name {} {
 
 
 ad_proc -public weblogger_admin_portlet::get_pretty_name {} {
-    return "[_ weblogger-portlet.Administration]"
+    return "#weblogger-portlet.Administration#"
 }
 
 
