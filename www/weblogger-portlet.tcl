@@ -35,31 +35,6 @@ foreach package_id $config(package_id) {
     }
 }
 
-template::list::create -name blogs -multirow entries -key entry_id -pass_properties {
-} -elements {
-    item {
-        label ""
-        display_template {
-          <b>@entries.parent_name@</b></br>
-          <group column="package_id">
-            <if @entries.entry_id@ not nil>
-	    &raquo; <i><a href="@entries.view_url@" title="View this entry">@entries.title@</a></i> 
-	            @entries.content;noquote@ 
-                    <small>(@entries.posted_time_pretty@)</small></br>
-            </if>
-          </group>
-        }
-    }
-    actions {
-	label ""
-	display_template {
-            <if @entries.add_url@ not nil><a href="@entries.add_url@">#weblogger-portlet.Add_entry#</a>
-            | </if>
-            <a href="@entries.base_url@">\#weblogger-portlet.FullView\#</a>
-	}
-    }
-}
-
 db_multirow -extend { view_url add_url } entries entries {} {
     if { !$package_read_p($package_id) } {
         continue
