@@ -15,7 +15,7 @@
 
         <provides url="weblogger-portlet" version="2.2.1a1"/>
         <requires url="lars-blogger" version="2.2.1a1"/>
-        <requires url="new-portal" version="2.2.0a1"/>
+        <requires url="new-portal" version="2.2.1a1"/>
 
         <callbacks>
             <callback type="after-install"  proc="weblogger_portlet::after_install"/>
