@@ -8,14 +8,14 @@
     <singleton-p>t</singleton-p>
     <auto-mount>weblogger-portlet</auto-mount>
 
-    <version name="2.2.1a1" url="http://openacs.org/repository/download/apm/weblogger-portlet-2.2.1a1.apm">
+    <version name="2.2.1b1" url="http://openacs.org/repository/download/apm/weblogger-portlet-2.2.1a1.apm">
         <owner url="mailto:simon@bcuni.net">Simon Carstensen</owner>
-        <release-date>2006-12-02</release-date>
+        <release-date>2006-12-17</release-date>
         <vendor url="http://www.collaboraid.biz">Collaboraid</vendor>
 
-        <provides url="weblogger-portlet" version="2.2.1a1"/>
-        <requires url="lars-blogger" version="2.2.1a1"/>
-        <requires url="new-portal" version="2.2.1a1"/>
+        <provides url="weblogger-portlet" version="2.2.1b1"/>
+        <requires url="lars-blogger" version="2.2.1b1"/>
+        <requires url="new-portal" version="2.2.1b1"/>
 
         <callbacks>
             <callback type="after-install"  proc="weblogger_portlet::after_install"/>
