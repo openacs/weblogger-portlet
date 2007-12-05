@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message_catalog package_key="weblogger-portlet" package_version="2.3.1" locale="el_GR" charset="utf-8">
+
+  <msg key="Add_entry">Προσθήκη εγγραφής</msg>
+  <msg key="Administer_Weblogger">Διαχειριστής Weblogger</msg>
+  <msg key="Administration">Διαχείριση Weblogger</msg>
+  <msg key="Draft_entries">Πρόχειρες εγγραφές</msg>
+  <msg key="FullView">Πλήρης προβολή</msg>
+  <msg key="lt_by_entriesposter_firs">κατά %entries.poster_first_names% %entries.poster_last_name%</msg>
+  <msg key="No_Entries">Καμία εγγραφή</msg>
+  <msg key="raquo">&amp;raquo;</msg>
+  <msg key="weblogger">Weblogger</msg>
+</message_catalog>
