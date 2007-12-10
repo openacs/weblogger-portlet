@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<message_catalog package_key="weblogger-portlet" package_version="2.3.0" locale="pl_PL" charset="utf-8">
+<message_catalog package_key="weblogger-portlet" locale="pl_PL" charset="utf-8">
 
   <msg key="Add_entry">Dodaj wpis</msg>
   <msg key="Administer_Weblogger">Administruj Webloggerem</msg>
