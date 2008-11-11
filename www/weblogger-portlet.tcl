@@ -4,7 +4,7 @@
 # simon@bcuni.net
 #
 # The logic for the weblogger portlet
-# 
+#
 
 ad_page_contract {
     The display logic for the weblogger portlet
@@ -16,7 +16,7 @@ ad_page_contract {
 
 }
 
-# Default value; TODO get from package paramete
+# Default value; TODO get from package parameter
 if  { ![info exists length]} {
     set length 100
 }
@@ -24,7 +24,7 @@ if  { ![info exists length]} {
 set user_id [ad_conn user_id]
 set write_p [ad_permission_p $user_id admin]
 
-array set config $cf    
+array set config $cf
 set shaded_p $config(shaded_p)
 
 set list_of_package_ids $config(package_id)
@@ -47,16 +47,15 @@ template::list::create -name blogs -multirow entries -key entry_id -pass_propert
         label ""
         display_template {
           <p class="blog-name"><b>@entries.parent_name@</b>
-            <small><if @entries.add_url@ not nil><a class="button" href="@entries.add_url@">#weblogger-portlet.Add_entry#</a>
-             </if>
-            <a class="button" href="@entries.base_url@">\#weblogger-portlet.FullView\#</a></small>
+            <span class="blog-actions"><if @entries.add_url@ not nil><a class="button" href="@entries.add_url@">#weblogger-portlet.Add_entry#</a></if>
+            <a class="button" href="@entries.base_url@">\#weblogger-portlet.FullView\#</a></span>
           </p>
-        <ul>
+          <ul class="blog-entries">
           <group column="package_id">
             <if @entries.entry_id@ not nil>
-            <li class="blog-entry"> <i><a href="@entries.view_url@" title="View this entry">@entries.title@</a></i> <small>(@entries.posted_time_pretty@)</small>
-              <br><span class="blog-content">@entries.content;noquote@</span> 
-            </li>
+              <li class="blog-entry"> <i><a href="@entries.view_url@" title="View this entry">@entries.title@</a></i> <small>(@entries.posted_time_pretty@)</small>
+              <br><span class="blog-content">@entries.content;noquote@</span>
+              </li>
             </if>
           </group></ul>
         }
